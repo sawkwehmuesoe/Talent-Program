@@ -1,0 +1,18 @@
+h2{
+    color: red;
+}
+
+.a-bloc__table--1{
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+td:nth-last-of-type(1){
+    background: #c70303;
+    color: #fff;
+}
+
