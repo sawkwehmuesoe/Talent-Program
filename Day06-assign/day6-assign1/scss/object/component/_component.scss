@@ -1,0 +1,52 @@
+.c-btn{
+    a{
+
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px 40px;
+        border-radius: 30px;
+    }
+
+    &--more{
+        a{
+            color: #8d8d8d;
+            background-color:#ebe8e8; 
+            padding: 10px 40px;
+        }
+    }
+
+    &--view{
+
+        align-self: center;
+
+        a{
+            color: #E76F51;
+            border: 1px solid #E76F51;
+            padding: 10px 60px;
+        }
+    }
+
+}
+
+.c-title{
+    max-width: 408px;
+    margin: 0px auto 80px;
+    text-align: center;
+
+    img{
+        margin-bottom: 20px;
+    }
+
+    h4{
+        font-family: 'Archivo', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+}
+
+.c-mail--email{
+    position: relative;
+}
+

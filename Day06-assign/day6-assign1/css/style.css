@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #FAF4F2;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+}
+.l-header .l-header-warp {
+  width: 1518px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header .l-header-warp .l-header__list {
+  display: flex;
+}
+.l-header .l-header-warp .l-header__list h1 {
+  margin-right: 30px;
+}
+.l-header .l-header-warp .l-header__list h1 a img {
+  width: 50px;
+}
+.l-header .l-header-warp .l-header__list nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.l-header .l-header-warp .l-header__list nav ul li a {
+  color: #d2d2d2;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.l-header .l-header-warp .l-header__list nav ul li a.active {
+  color: #fff;
+}
+.l-header .l-header-warp .l-header__list nav ul li a.active::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #E76F51;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.l-header .l-header-warp .l-header__signin {
+  display: flex;
+}
+.l-header .l-header-warp .l-header__signin .c-btn--signup a {
+  border: none;
+}
+
+.c-btn a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+.c-btn--more a {
+  color: #8d8d8d;
+  background-color: #ebe8e8;
+  padding: 10px 40px;
+}
+.c-btn--view {
+  align-self: center;
+}
+.c-btn--view a {
+  color: #E76F51;
+  border: 1px solid #E76F51;
+  padding: 10px 60px;
+}
+
+.c-title {
+  max-width: 408px;
+  margin: 0px auto 80px;
+  text-align: center;
+}
+.c-title img {
+  margin-bottom: 20px;
+}
+.c-title h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.c-mail--email {
+  position: relative;
+}
+
+.main-visual {
+  width: 100%;
+  height: 1100px;
+  background-image: url(../../../img/banner/BG.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-visual .main-visual-bloc {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-visual .main-visual-bloc .main-visual-warp {
+  max-width: 600px;
+}
+.main-visual .main-visual-bloc .main-visual-warp h2 {
+  color: #fff;
+  font-size: 81px;
+  font-family: "Archivo Black", sans-serif;
+  margin-bottom: 20px;
+  line-height: 90px;
+}
+.main-visual .main-visual-bloc .main-visual-warp p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  line-height: 28px;
+}
+.main-visual .main-visual-bloc .main-visual-warp .c-btn--discover a {
+  background-color: #E76F51;
+  padding: 10px 60px;
+  border: none;
+}
+
+.l-content {
+  width: 100%;
+}
+
+.l-warp-inner {
+  width: 1518px;
+  margin: 0 auto;
+}
+.l-warp-inner .p-bloc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.l-warp-inner .p-bloc .card-bloc {
+  width: 25% px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.l-warp-inner .p-bloc .card-bloc .card-bloc__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.l-warp-inner .p-bloc .card-bloc .card-bloc__inner .img-box {
+  margin-bottom: 20px;
+}
+.l-warp-inner .p-bloc .card-bloc .card-bloc__inner .txt-box h3 {
+  font-size: 18px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.l-warp-inner .p-bloc .card-bloc .card-bloc__inner .txt-box p {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+}
+
+.p-bloc--card {
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.p-bloc--activity {
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.activity-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.activity-content .card-bloc {
+  width: 23.5%;
+}
+.activity-content .card-bloc .card-bloc__inner .img-box {
+  position: relative;
+  z-index: 0;
+}
+.activity-content .card-bloc .card-bloc__inner .img-box .favorite {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.activity-content .card-bloc .card-bloc__inner .txt-box {
+  text-align: center;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
+.activity-content .card-bloc .card-bloc__inner .txt-box .p-price {
+  background-color: #fff;
+  color: #E76F51;
+  display: inline-block;
+  padding: 20px 35px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.activity-content .card-bloc .card-bloc__inner .txt-box p {
+  margin-bottom: 30px;
+}
+
+.p-bloc--form {
+  margin-bottom: 50px;
+}
+.p-bloc--form .msg-form {
+  width: 100%;
+  height: 390px;
+  background: #F8E1DB;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.p-bloc--form .msg-form__contact {
+  padding: 50px 0px;
+}
+.p-bloc--form .msg-form__contact h1 {
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.p-bloc--form .msg-form__contact p {
+  max-width: 500px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.p-bloc--form .msg-form__contact input {
+  width: 90%;
+  font-family: "Roboto";
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 25px 70px 25px 50px;
+  position: relative;
+}
+.p-bloc--form .msg-form__contact input:focus {
+  outline: none;
+}
+.p-bloc--form .msg-form__contact .envelope {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-10px);
+}
+.p-bloc--form .msg-form__contact .telegram {
+  width: 25%;
+  position: absolute;
+  right: -100px;
+  top: -20px;
+}
+.p-bloc--form .msg-form__contact .telegram img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
